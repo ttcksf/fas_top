@@ -1,0 +1,82 @@
+@use "./variable" as *;
+
+/*------------------------------
+common
+------------------------------*/
+body{
+    word-break: break-all;
+    color: $color-text;
+    font-family: $font-base;
+    font-feature-settings: "palt";
+    &.is-active{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;/* スクロールバー補完 */
+    }
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* スマホ用の表示の時はis-pcは非表示 */
+@include mq('sp') {
+    .pc {
+        display: none !important;
+    }
+}
+
+/* PC用の表示の時はis-spは非表示 */
+@include mq('pc') {
+    .sp {
+        display: none !important;
+    }
+}
+
+/*  コンテンツ幅
+------------------------------*/
+.inner {
+    width: $layout-width-inner;
+    max-width: 90%;
+    margin: 0 auto;
+    @include mq('sp') {
+        max-width: 92.3%;
+        width: 400px;
+    }
+}
+
+/* タイトル
+------------------------------*/
+.c-section-title {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: (49 / 28);
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7576e;
+    @include mq('sp') {
+        font-size: min(2.4rem,calc(100vw * (24/390)));
+        letter-spacing: 0.065em;
+    }
+}
+
+.c-section-title--wh{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* テキスト色
+------------------------------*/
+.u-text-pink{
+    color: $color-accent;
+}
+
+/* 
+------------------------------*/
+.fade{
+    opacity: 0;
+}

@@ -1,0 +1,41 @@
+// ------------------------------------
+// フォント
+// ------------------------------------
+$font-base: "Noto Sans JP", sans-serif;
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('../font/Barlow-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-Barlow: 'Barlow', sans-serif;
+
+// ------------------------------------
+// カラー
+// ------------------------------------
+$clor-blue: #4b49bb;
+$color-accent: #eb7084;
+$color-text: #4a4a4a;
+
+// ------------------------------------
+// コンテンツ幅
+// ------------------------------------
+$layout-width-inner: 1000px;
+
+// ------------------------------------
+// ブレークポイント
+// ------------------------------------ 
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+  "pc": "(min-width: 768px)",
+);
+
+// メディアクエリ
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+

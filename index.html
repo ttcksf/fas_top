@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>FAS</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__inner inner">
+            <div class="header__wrapper">
+                <div class="header__logo"><a href=""><img src="./img/logo.png" alt="FAS corporationltd"></a></div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__item"><a href="">サービス<span class="header__item-en">SERVICE</span></a></li>
+                        <li class="header__item"><a href="">記事一覧<span class="header__item-en">BLOG</span></a></li>
+                        <li class="header__item"><a href="">会社概要<span class="header__item-en">ABOUT</span></a></li>
+                        <li class="header__item"><a href="">関連サイト<span class="header__item-en">LINK</span></a></li>
+                    </ul>
+                    <div class="header__contact">
+                        <a href="">
+                            <span class="header__contact-icon"><img src="./img/icon_link.png" alt="アイコン"></span>
+                            <span class="header__conact-text">お問い合わせ</span>
+                        </a>
+                    </div>
+                    <div class="drawer-icon">
+                        <div class="drawer-icon__bars">
+                            <span class="drawer-icon__text">menu</span>
+                            <div class="drawer-icon__bar1"></div>
+                            <div class="drawer-icon__bar2"></div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="drawer-content">
+                    <ul class="drawer-menu">
+                        <li class="drawer-item drawer-item--blue"><a href=""><span>サービス</span><span class="">SERVICE</span></a></li>
+                        <li class="drawer-item"><a href=""><span>記事一覧</span><span class="">BLOG</span></a></li>
+                        <li class="drawer-item"><a href=""><span>会社概要</span><span class="">ABOUT</span></a></li>
+                        <li class="drawer-item"><a href=""><span>関連サイト</span><span class="">LINK</span></a></li>
+                    </ul>
+                </div>
+                <div class="drawer-background"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="fv__wrap">
+            <div class="fv">
+                <picture>
+                    <source srcset="./img/fv_sp.webp" media="(max-width: 768px)">
+                    <img src="./img/fv.webp" alt="">
+                </picture>
+                <a href="" class="fv__cta">
+                    <span class="fv__cta-subtext">Web集客をご検討ですか？</span>
+                    <span class="fv__cta-text">まずは無料でご相談</span>
+                </a>
+                <!-- <div class="inner">
+                    <div class="fv__box">
+                        <div class="fv__list"><img src="./img/fv_text.png" alt="SNS運用代行 記事作成 Webサイト制作"></div>
+                        <p class="fv__text">Webマーケティングなら名古屋のエフエーエス</p>
+                        <a href="" class="fv__cta">
+                            <span class="fv__cta-subtext">Web集客をご検討ですか？</span>
+                            <span class="fv__cta-text">まずは無料でご相談</span>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- /.fv -->
+        <section class="introduction">
+            <div class="inner">
+                <div class="introduction__wrapper">
+                    <div class="introduction__image"><img src="./img/introduction_img1.png" alt="握手しているイラスト"></div>
+                    <div class="introduction__content">
+                        <h2 class="introduction__title">INTRODUCTION</h2>
+                        <h3 class="introduction__heading">情報を必要としている人に的確に<br class="sp">伝えるため、<br>SNS、ホームページ、ECサイトを<br class="sp">活用しませんか？</h3>
+                        <p class="introduction__description">
+                            愛知県名古屋市の株式会社エフエーエスは、複雑なWebマーケティングやSNSマーケティングの運用および制作を、ワンストップでご対応。<br>
+                            SNS運用代行、SNS担当者育成、SEO記事作成代行、<br class="pc">ホームページ制作、デザイン制作を軸に、<br class="pc">多角的な手法で多くの企業様の集客力を強化しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.introduction -->
+        <section class="service">
+            <img class="c-para dec1" data-dir="-1"  data-po="0.4"  src="./img/service_dec1.png" alt="">
+            <img class="c-para dec2" data-dir="1" data-po="0.5"  src="./img/service_dec2.png" alt="">
+            <img class="c-para dec3" data-dir="1"  data-po="1.1"  src="./img/service_dec3.png" alt="">
+            <div class="inner service__inner">
+                <h2 class="c-section-title fade">サービス一覧</h2>
+                <div class="service__container">
+                    <div class="service__box"><!-- 1 -->
+                        <div class="service__block service__block--main">
+                            <div class="service__header">
+                                <span class="service__number">01</span>
+                                <h3 class="service__name">SNS運用支援</h3>
+                            </div>
+                            <h3 class="service__heading">集客に欠かせないSNS、<br>立ち上げからキャンペーン企画、<br class="sp">運用代行まで<br class="pc"><span class="u-text-pink">トータルサポート</span></h3>
+                            <p class="service__description">
+                                集客に欠かせないSNSを、アカウントの立ち上げから<br class="pc">キャンペーン企画、運用代行までトータルにサポートします。<br>
+                                Facebook、Instagram、X（旧Twitter）、Youtube、TikTokなど、目的に合ったSNSのご提案も可能です。
+                            </p>
+                        </div>
+                        <div class="service__block service__block--list">
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <div class="service__item-label">SNSの運用を始めたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon1.png" alt="アイコン">SNSスタートアップ</a>
+                                    </div>
+                                </li>
+                                <li class="service__item">
+                                    <div class="service__item-label">既存のアカウントを活用したい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon2.png" alt="アイコン">SNSプロモーション<br>/運用代行/広告出稿</a>
+                                    </div>
+                                </li>
+                                <li class="service__item">
+                                    <div class="service__item-label">社内にSNS運用の人材が欲しい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon3.png" alt="アイコン">企業内SNS担当者育成<br>/SNSセミナー</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service__box"><!-- 2 -->
+                        <div class="service__block service__block--main">
+                            <div class="service__header service__header--orange">
+                                <span class="service__number">02</span>
+                                <h3 class="service__name">Webサイト制作</h3>
+                            </div>
+                            <h3 class="service__heading">集客を強化するための<br><span class="u-text-pink">効果的な</span>サイト制作やコンテンツ作成</h3>
+                            <p class="service__description">
+                                企業ホームページ（コーポレートサイト）、ECサイトの作成のほか、集客を強化するためのSEO対策・コンテンツ作成を行います。<br>
+                                企業ブログやコラムの記事作成代行もお任せください。
+                            </p>
+                        </div>
+                        <div class="service__block service__block--list">
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <div class="service__item-label">Webサイト/ホームページを作りたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon4.png" alt="アイコン">Webサイト制作</a>
+                                    </div>
+                                </li>
+                                <li class="service__item">
+                                    <div class="service__item-label">販売サイトを作りたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon5.png" alt="アイコン">ECサイト制作</a>
+                                    </div>
+                                </li>
+                                <li class="service__item">
+                                    <div class="service__item-label">Webサイト/ホームページからの集客<br class="sp">を強化したい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon6.png" alt="アイコン">SEOコンサルタント<br>/記事作成代行</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service__box"><!-- 3 -->
+                        <div class="service__block service__block--main">
+                            <div class="service__header service__header--green">
+                                <span class="service__number">03</span>
+                                <h3 class="service__name">グッズ制作・各種デザイン</h3>
+                            </div>
+                            <h3 class="service__heading">プロモーションを更に強化する<br>オリジナルグッズや物販商品周辺の<br>企画制作</h3>
+                            <p class="service__description">
+                                ノベルティや展覧会用の物販商品など、オリジナルグッズの企画製作を行います。<br>
+                                オリジナルキャラクターの作成も承ります。<br>
+                                販促用印刷物のデザインもお任せください。
+                            </p>
+                        </div>
+                        <div class="service__block service__block--list">
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <div class="service__item-label">販促、物販用の商品を作りたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon7.png" alt="アイコン">オリジナルグッズ制作</a>
+                                    </div>
+                                </li>
+                                <li class="service__item">
+                                    <div class="service__item-label">チラシ・パンフレット・DMを作りたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon8.png" alt="アイコン">各種デザイン/印刷</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service__box"><!-- 4 -->
+                        <div class="service__block service__block--main">
+                            <div class="service__header service__header--blue">
+                                <span class="service__number">04</span>
+                                <h3 class="service__name">事務局代行</h3>
+                            </div>
+                            <h3 class="service__heading"><span class="u-text-pink">社内のスムーズな作業のために</span><br>効率的な代行を</h3>
+                            <p class="service__description">
+                                入力作業や集計作業は弊社に代行することで企業活動をスムーズに。<br>
+                                社内リソースを割かず、コア業務に集中できます。
+                            </p>
+                        </div>
+                        <div class="service__block service__block--list">
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <div class="service__item-label">キャンペーンやアンケートの<br class="sp">事務局代行を頼みたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon9.png" alt="アイコン">各種事務局代行</a>
+                                    </div>
+                                </li>
+                                <li class="service__item">
+                                    <div class="service__item-label">データ入力、集計作業を頼みたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon10.png" alt="アイコン">データ入力</a>
+                                    </div>
+                                </li>
+                                <li class="service__item">
+                                    <div class="service__item-label">オフィスの環境整備を頼みたい</div>
+                                    <div class="service__item-button">
+                                        <a href=""><img src="./img/img_service-icon11.png" alt="アイコン">ＯＡ機器<br>/ＩＴインフラ構築<br>/記事作成代行</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.service -->
+        <section class="reason">
+            <div class="inner">
+                <h2 class="c-section-title fade">エフエーエスが選ばれる<br class="sp">3つの理由</h2>
+                <ul class="reason__list">
+    
+                    <li class="reason__item">
+                        <div class="reason__box">
+                            <span class="reason__number">1</span>
+                            <h3 class="reason__label">プロによる<br>スピード感ある制作が可能</h3>
+                            <div class="reason__icon reason__icon1"><img src="./img/reason1.png" alt=""></div>
+                        </div>
+                        <p class="reason__description">各分野の専門スタッフが在籍！極力外注に頼らない仕組みで、質の高いサービスを素早く提供します。</p>
+                    </li>
+                    <li class="reason__item">
+                        <div class="reason__box">
+                            <span class="reason__number">2</span>
+                            <h3 class="reason__label">企画制作から継続的な<br>更新まで一括対応</h3>
+                            <div class="reason__icon reason__icon2"><img src="./img/reason2.png" alt=""></div>
+                        </div>
+                        <p class="reason__description">企画、デザイン、実装、SEO対策、ブログやSNSの記事作成までワンストップでご対応いたします。</p>
+                    </li>
+    
+                    <li class="reason__item">
+                        <div class="reason__box">
+                            <span class="reason__number">3</span>
+                            <h3 class="reason__label">多様な媒体と連携した<br>集客をご提案</h3>
+                            <div class="reason__icon reason__icon3"><img src="./img/reason3.png" alt=""></div>
+                        </div>
+                        <p class="reason__description">Web、SNS、紙、広告、販促物、印刷物など幅広い集客手段を組み合わせた戦略が可能です。</p>
+                    </li>
+                </ul>
+                <div class="reason__cta">
+                    <p class="reason__cta-text">お気軽にご相談ください</p>
+                    <div class="reason__cta-button"><a href="">ZOOM無料相談受付中</a></div>
+                </div>
+            </div>
+        </section>
+        <!-- /.reason -->
+        <section class="situation">
+            <div class="inner">
+                <h2 class="c-section-title fade">最近のお問い合わせ状況</h2>
+                <ul class="situation__list">
+                    <li>ーー関連業界　コラムの作成代行についてのご相談をいただきました</li>
+                    <li>ーー関連業界　SNSのアカウント立ち上げおよび運用についてのご相談をいただきました</li>
+                    <li>ーー関連業界　SNSの運用代行についてのご相談をいただきました</li>
+                    <li>ーー関連業界　コラムの作成代行についてのご相談をいただきました</li>
+                    <li>ーー関連業界　コラムの作成代行についてのご相談をいただきました</li>
+                </ul>
+            </div>
+        </section>
+        <!-- /.situation -->
+        <section class="case">
+            <div class="inner">
+                <h2 class="c-section-title fade c-section-title--wh">実績・導入事例</h2>
+                <ul class="case__list">
+                    <li class="case__item">
+                        <span class="case__number">Case.1</span>
+                        <div class="case__content">
+                            <div class="case__header">
+                                <h3 class="case__label">人材派遣業</h3>
+                                <div class="case__image sp"><img src="./img/case_img1.png" alt="パソコンをしている女性の写真"></div>
+                            </div>
+                            <p class="case__description">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </p>
+                        </div>
+                        <div class="case__image pc"><img src="./img/case_img1.png" alt="パソコンをしている女性の写真"></div>
+                    </li>
+                    <li class="case__item">
+                        <span class="case__number">Case.2</span>
+                        <div class="case__content">
+                            <div class="case__header">
+                                <h3 class="case__label">清掃業</h3>
+                                <div class="case__image sp"><img src="./img/case_img2.png" alt="モップをバケツからあげている様子"></div>
+                            </div>
+                            <p class="case__description">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </p>
+                        </div>
+                        <div class="case__image pc"><img src="./img/case_img2.png" alt="モップをバケツからあげている様子"></div>
+                    </li>
+                    <li class="case__item">
+                        <span class="case__number">Case.3</span>
+                        <div class="case__content">
+                            <div class="case__header">
+                                <h3 class="case__label">製造業</h3>
+                                <div class="case__image sp"><img src="./img/case_img3.png" alt="作業をしている男性の写真"></div>
+                            </div>
+                            <p class="case__description">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </p>
+                        </div>
+                        <div class="case__image pc"><img src="./img/case_img3.png" alt="作業をしている男性の写真"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /.case -->
+        <section class="review">
+            <div class="inner review__inner">
+                <div class="review__header">
+                    <h2 class="review__title"><span class="u-text-pink">お客様</span>の声</h2>
+                    <p class="review__description">FASだからこそ依頼したいと思っていただける、実際にご利用いただいたお客様の声を集めました。</p>
+                </div>
+
+                <div class="review__list__wrap">
+                    <div class="review__list reviewSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="review__item swiper-slide"><!-- 1 -->
+                                <div class="review__image"><img src="./img/review_img1.png" alt="アイコン"></div>
+                                <div class="review__content">
+                                    <h3 class="review__label">SNS運用代行・スタートアップ支援</h3>
+                                    <p class="review__text">数年前に社内で試したものの効果がわからず、SNSでの集客は諦めていました。他社がSNSを使い始めたことに焦りを感じ、アカウントの立ち上げからサポートをお願いしたく問い合わせました。...　</p>
+                                    <a href="" class="review__more">詳しく見る</a>
+                                </div>
+                            </div>
+                            <div class="review__item swiper-slide"><!-- 2 -->
+                                <div class="review__image"><img src="./img/review_img2.png" alt="アイコン"></div>
+                                <div class="review__content">
+                                    <h3 class="review__label">SNS担当者育成</h3>
+                                    <p class="review__text">
+                                        社内でSNSを運用していましたが、担当者が変わるたびに引継ぎがうまくいかずトラブル続きでした…<br>
+                                        エフエーエスさん「SNS担当者育成サービス」のを提案していただきました。...　
+                                    </p>
+                                    <a href="" class="review__more">詳しく見る</a>
+                                </div>
+                            </div>
+                            <div class="review__item swiper-slide"><!-- 3 -->
+                                <div class="review__image"><img src="./img/review_img3.png" alt="アイコン"></div>
+                                <div class="review__content">
+                                    <h3 class="review__label">SEO記事作成代行</h3>
+                                    <p class="review__text">
+                                        数年前に会社のホームページを作り直したものの、いまいち集客に結び付いていないと感じていました。<br>
+                                        ホームページの作り直しをするべきか？と迷って、名古屋市内のホームページ制作会社に…
+                                    </p>
+                                    <a href="" class="review__more">詳しく見る</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_slidebutton">
+                        <div class="num">
+                            <span id="num_current"></span>/<span id="num_max"></span>
+                        </div>
+                        <!-- ナビボタン -->
+                        <div class="swiper-button-prev" onclick="slideC('prev')"></div>
+                        <div class="swiper-button-next" onclick="slideC('next')"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="review__button"><a href="">お客様の声をさらに見る</a></div>
+            </div>
+        </section>
+        <!-- /.review -->
+        <section class="faq">
+            <div class="inner">
+                <h2 class="c-section-title fade">よくあるご質問</h2>
+            </div>
+            <div class="faq__list__wrap">
+                <div class="inner">
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <div class="faq__item-q">エフエーエスに依頼すると<br class="sp">必ず成果が出ますか？</div>
+                            <div class="faq__item-a">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__item-q">ホームページやSNSをやったことがなくても相談できますか？</div>
+                            <div class="faq__item-a">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__item-q">ブログの記事作成代行やSNSの記事作成だけ頼むことはできますか？</div>
+                            <div class="faq__item-a">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__item-q">どんな業種でも対応できますか？</div>
+                            <div class="faq__item-a">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__item-q">InstagramやLINE広告など何に広告を出したらいいか分からないのですが相談できますか？</div>
+                            <div class="faq__item-a">
+                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- /.faq -->
+        <section class="column">
+            <div class="inner">
+                <h2 class="c-section-title fade">コラム</h2>
+                <ul class="column__list">
+                    <li class="column__item">
+                        <div class="column__thumbnail"><img src="./img/column_thumbnail1.jpg" alt=""></div>
+                        <h3 class="column__title">通販で販促！ECサイトの効果的な運用方法とは？</h3>
+                        <p class="column__excerpt">通販(EC)サイトにおける商品の売り方や宣伝方法は、サイト運営上とても重要です。・・・</p>
+                        <div class="column__footer">
+                            <div class="column__date">2025年01月10日</div>
+                            <a href="" class="column__button"><img src="./img/icon_arrow_pink.png" alt="記事を見る"></a>
+                        </div>
+                    </li>
+                    <li class="column__item">
+                        <div class="column__thumbnail"><img src="./img/column_thumbnail2.jpg" alt=""></div>
+                        <h3 class="column__title">スタート前に必読！企業ブログのルール作り完全版！</h3>
+                        <p class="column__excerpt">企業ブログとは、自社サイトで運用するブログのことで…</p>
+                        <div class="column__footer">
+                            <div class="column__date">2025年01月10日</div>
+                            <a href="" class="column__button"><img src="./img/icon_arrow_pink.png" alt="記事を見る"></a>
+                        </div>
+                    </li>
+                    <li class="column__item">
+                        <div class="column__thumbnail"><img src="./img/column_thumbnail3.jpg" alt=""></div>
+                        <h3 class="column__title">「指名検索数」を増やすメリットと5つの具体策</h3>
+                        <p class="column__excerpt">検索の種類には「一般検索」と「指名検索」がありますが…</p>
+                        <div class="column__footer">
+                            <div class="column__date">2025年01月10日</div>
+                            <a href="" class="column__button"><img src="./img/icon_arrow_pink.png" alt="記事を見る"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /.column -->
+        <section class="clients">
+            <div class="inner">
+                <h2 class="c-section-title fade">お取引先企業様</h2>
+                <div class="clients__list">
+                    <picture>
+                        <source srcset="./img/clients_img_sp.jpg" media="(max-width: 768px)">
+                        <img src="./img/clients_img.jpg" alt="お取引先企業名の画像">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <!-- /.clients -->
+        <section class="contact">
+            <div class="inner">
+                <h2 class="c-section-title fade">お問い合わせ</h2>
+                <a href="" class="contact__button">
+                    <span class="contact__button-text">お問い合わせはこちらから</span>
+                    <span class="contact__button-subtext">オンラインでの打ち合わせも可能です！</span>
+                </a>
+                <div class="contact__phone">
+                    <div class="contact__phone-label">お電話でのお問い合わせ</div>
+                    <a href="tel:052-459-5030" class="contact__phone-link">
+                      <span class="contact__phone-number">052-459-5030</span>
+                      <p class="contact__phone-hours">平日9:30~17:30</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- /.contact -->
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="footer__flex">
+                <div class="footer__info">
+                    <div class="footer__compnay">
+                        <h2 class="footer__comapany-label">会社概要</h2>
+                        <div class="footer__company-content">
+                            <p>
+                                株式会社エフエーエス<br>
+                                <br>
+                                〒453-0016<br>
+                                愛知県名古屋市中村区竹橋町13-18 オフィスワンタケハシ<br>
+                                TEL：052-459-5030 ／ FAX：052-459-5032
+                            </p>
+                            <p>
+                                SNS運用代行、ホームページ制作、ネットショップ作成、<br>
+                                OA機器、ITインフラ構築、データ入力、印刷物作成など<br>
+                                様々なサービスのご提供は名古屋が拠点の株式会社エフエーエスにおまかせください。
+                            </p>
+                        </div>
+                    </div>
+                    <p class="footer__copyright pc">&copy; 2025 FAS Corporate ltd. All Rights Reserved.</p>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__sitemap">
+                        <h2 class="footer__sitemap-label">サイトマップ</h2>
+                        <ul class="footer__menu footer__menu1">
+                            <li class="footer__item"><a href="">トップページ</a></li>
+                            <li class="footer__item"><a href="">ブログ記事一覧</a></li>
+                            <li class="footer__item"><a href="">会社概要</a></li>
+                            <li class="footer__item"><a href="">関連サイト</a></li>
+                        </ul>
+                        <ul class="footer__menu footer__menu2">
+                            <li class="footer__item"><a href="">お問い合わせ</a></li>
+                            <li class="footer__item"><a href="">個人情報保護方針</a></li>
+                        </ul>
+                        <div class="footer__flex footer__flex--end">
+                            <ul class="footer__menu footer__menu3">
+                                <li class="footer__item">
+                                    <a href="">サービス</a>
+                                    <ul class="footer__submenu">
+                                        <li><a href="">SNSスタートアップ</a></li>
+                                        <li><a href="">各種イベントなどのオリジナルグッズ制作</a></li>
+                                        <li><a href="">SNSプロモーション／SNS運用代行／SNS広告出稿</a></li>
+                                        <li><a href="">SNSスクール</a></li>
+                                        <li><a href="">企業SNS担当者育成／SNSセミナー</a></li>
+                                        <li><a href="">SEOコンサルタント／コラム制作</a></li>
+                                        <li><a href="">ホームページ制作</a></li>
+                                        <li><a href="">ネットショップ作成</a></li>
+                                        <li><a href="">データ入力／名刺入力／アンケート入力集計</a></li>
+                                        <li><a href="">各種デザイン／印刷</a></li>
+                                        <li><a href="">OA機器／ITインフラ構築</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="footer__sns">
+                                <h2 class="footer__sns-label">エフエーエス運営SNSアカウント</h2>
+                                <ul class="footer__sns-list">
+                                    <li><a href=""><img src="./img/icon_Instagram.png" alt="Instagram">エフエーエス公式Instagram</a></li>
+                                    <li><a href=""><img src="./img/icon_X.png" alt="X">エフエーエス公式X（旧Twitter）</a></li>
+                                </ul>
+                                <div class="footer__privacy-mark"><img src="./img/footer_privacy-mark.jpg" alt="プライバシーマーク"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__copyright sp">&copy; 2025 FAS Corporate ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
