@@ -301,7 +301,6 @@ fv
   width: 21%;
   display: inline-block;
   overflow: hidden;
-
   background: linear-gradient(
     90deg,
     rgba(42, 203, 167, 1) 0%,
@@ -347,7 +346,8 @@ fv
   @include mq("sp") {
     top: 87.7%;
     left: 50%;
-    width: 64%;
+    width: 78%;
+    padding: 10px 0;
   }
 }
 
@@ -873,10 +873,10 @@ reason
   }
   @include mq("sp") {
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 17px;
     padding: 17% 0 0;
     &::before {
-      width: 110%;
+      width: 117%;
     }
   }
 }
@@ -975,18 +975,51 @@ reason
   text-align: center;
 }
 
+// .reason__cta-button {
+//   text-align: center;
+//   margin-top: 10px;
+//   a {
+//     display: inline-block;
+//     width: 600px;
+//     max-width: 100%;
+//     background: linear-gradient(
+//       90deg,
+//       rgba(19, 160, 239, 1) 0%,
+//       rgba(19, 112, 239, 1) 100%
+//     );
+//     border-radius: 8px;
+//     font-size: 1.6rem;
+//     font-weight: 500;
+//     line-height: (27 / 16);
+//     letter-spacing: 0.085em;
+//     color: #fff;
+//     text-align: center;
+//     text-decoration: underline;
+//     padding: 1.75em 0;
+
+//     &:hover {
+//       background: #fff;
+//       border: 1px solid #4b7dcc;
+//       color: #4b7dcc;
+//     }
+//   }
+//   @include mq("sp") {
+//     a {
+//       width: 84%;
+//       padding: 1.05em 0;
+//     }
+//   }
+// }
+
 .reason__cta-button {
   text-align: center;
   margin-top: 10px;
+
   a {
+    position: relative;
     display: inline-block;
     width: 600px;
     max-width: 100%;
-    background: linear-gradient(
-      90deg,
-      rgba(19, 160, 239, 1) 0%,
-      rgba(19, 112, 239, 1) 100%
-    );
     border-radius: 8px;
     font-size: 1.6rem;
     font-weight: 500;
@@ -996,7 +1029,43 @@ reason
     text-align: center;
     text-decoration: underline;
     padding: 1.75em 0;
+    overflow: hidden;
+    border: 1px solid transparent;
+
+    // 背景は before に移す
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(19, 160, 239, 1) 0%,
+        rgba(19, 112, 239, 1) 100%
+      );
+      z-index: -1;
+      transition: opacity 0.4s ease;
+    }
+
+    // コンテンツ部分を上に
+    position: relative;
+    z-index: 1;
+
+    transition: color 0.4s ease, border 0.4s ease;
+
+    &:hover {
+      color: #4b7dcc;
+      border: 1px solid #4b7dcc;
+
+      // 背景をフェードアウト
+      &::before {
+        opacity: 0;
+      }
+    }
   }
+
   @include mq("sp") {
     a {
       width: 84%;
@@ -1728,12 +1797,15 @@ contact
     left: 40px;
     transform: translateY(-50%);
     background: url(../img/icon_mail.png) no-repeat center center / contain;
-    width: 13px;
+    width: 15px;
     aspect-ratio: 33/24;
     z-index: 1; // アイコンをボタンの背景より前面に
   }
   &::before {
-    left: 16px;
+    left: 36px;
+    @include mq("sp") {
+      left: 16px;
+    }
   }
   &::after {
     content: "";
