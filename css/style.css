@@ -592,7 +592,8 @@ fv
   .fv__cta {
     top: 87.7%;
     left: 50%;
-    width: 64%;
+    width: 78%;
+    padding: 10px 0;
   }
 }
 
@@ -1139,11 +1140,11 @@ reason
 @media (max-width: 767px) {
   .reason__box {
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 17px;
     padding: 17% 0 0;
   }
   .reason__box::before {
-    width: 110%;
+    width: 117%;
   }
 }
 
@@ -1252,10 +1253,10 @@ reason
   margin-top: 10px;
 }
 .reason__cta-button a {
+  position: relative;
   display: inline-block;
   width: 600px;
   max-width: 100%;
-  background: linear-gradient(90deg, rgb(19, 160, 239) 0%, rgb(19, 112, 239) 100%);
   border-radius: 8px;
   font-size: 1.6rem;
   font-weight: 500;
@@ -1265,6 +1266,29 @@ reason
   text-align: center;
   text-decoration: underline;
   padding: 1.75em 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  transition: color 0.4s ease, border 0.4s ease;
+}
+.reason__cta-button a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(19, 160, 239) 0%, rgb(19, 112, 239) 100%);
+  z-index: -1;
+  transition: opacity 0.4s ease;
+}
+.reason__cta-button a:hover {
+  color: #4b7dcc;
+  border: 1px solid #4b7dcc;
+}
+.reason__cta-button a:hover::before {
+  opacity: 0;
 }
 @media (max-width: 767px) {
   .reason__cta-button a {
@@ -1986,12 +2010,17 @@ contact
   left: 40px;
   transform: translateY(-50%);
   background: url(../img/icon_mail.png) no-repeat center center/contain;
-  width: 13px;
+  width: 15px;
   aspect-ratio: 33/24;
   z-index: 1;
 }
 .contact__button::before {
-  left: 16px;
+  left: 36px;
+}
+@media (max-width: 767px) {
+  .contact__button::before {
+    left: 16px;
+  }
 }
 .contact__button::after {
   content: "";
