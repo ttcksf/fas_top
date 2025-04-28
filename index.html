@@ -123,6 +123,7 @@
         </div>
       </div>
     </header>
+    <?php require('./words/wp-load.php'); ?>
     <main>
       <div class="to__top">
         <a href="#"> TOPに戻る </a>
@@ -772,25 +773,48 @@
       <section class="column">
         <div class="inner">
           <h2 class="c-section-title fade">コラム</h2>
+          <?php
+              $args = array(
+                'posts_per_page' =>
+          3, 'paged' => $paged, 'post_type' => array( 'post', ), ); $the_query =
+          new WP_Query( $args ); ?>
           <ul class="column__list">
+            <?php if($the_query->have_posts()): ?>
+            <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
             <li class="column__item">
               <div class="column__thumbnail">
+                <?php if (has_post_thumbnail()) : ?>
+                <?php $id = get_post_thumbnail_id();?>
+                <?php $img = wp_get_attachment_image_src($id, 'full');?>
+                <?php echo '<img src="' . esc_url($img[0]) . '" alt="アイキャッチ">';
+                ?>
+                <?php else : ?>
                 <img src="./img/column_thumbnail1.jpg" alt="サムネイル1" />
+                <?php endif ; ?>
               </div>
               <h3 class="column__title">
-                通販で販促！ECサイトの効果的な運用方法とは？
+                <?php echo get_the_title(); ?>
               </h3>
               <p class="column__excerpt">
-                通販(EC)サイトにおける商品の売り方や宣伝方法は、サイト運営上とても重要です。・・・
+                <?php echo get_the_excerpt(); ?>
               </p>
               <div class="column__footer">
-                <div class="column__date">2025年01月10日</div>
-                <a href="" class="column__button"
+                <div class="column__date">
+                  <?php the_time( get_option( 'date_format' ) );?>
+                </div>
+                <a
+                  href="<?php the_permalink(); ?>"
+                  class="column__button"
+                  target="blink"
                   ><img src="./img/icon_arrow_pink.png" alt="記事を見る"
                 /></a>
               </div>
             </li>
-            <li class="column__item">
+            <?php endwhile; ?>
+            <?php else : ?>
+            <p>表示する記事はありませんでした。</p>
+            <?php endif; ?>
+            <!-- <li class="column__item">
               <div class="column__thumbnail">
                 <img src="./img/column_thumbnail2.jpg" alt="サムネイル2" />
               </div>
@@ -806,8 +830,8 @@
                   ><img src="./img/icon_arrow_pink.png" alt="記事を見る"
                 /></a>
               </div>
-            </li>
-            <li class="column__item">
+            </li> -->
+            <!-- <li class="column__item">
               <div class="column__thumbnail">
                 <img src="./img/column_thumbnail3.jpg" alt="サムネイル3" />
               </div>
@@ -823,8 +847,9 @@
                   ><img src="./img/icon_arrow_pink.png" alt="記事を見る"
                 /></a>
               </div>
-            </li>
+            </li> -->
           </ul>
+          <?php wp_reset_postdata(); ?>
         </div>
       </section>
       <!-- /.column -->
