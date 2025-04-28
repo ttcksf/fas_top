@@ -2334,4 +2334,60 @@ footer {
     width: 200px;
     margin: 38px auto 0;
   }
+}
+
+.to__top {
+  position: fixed;
+  bottom: 40px;
+  right: 4vw;
+  z-index: 20;
+}
+.to__top a {
+  cursor: pointer;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  margin: 0 auto;
+  max-width: 80px;
+  width: 80px;
+  height: 80px;
+  padding: 0px 7px 10px 7px;
+  border-radius: 10%;
+  color: #2e3c45;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
+}
+.to__top a::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 41px;
+  transition: 0.3s;
+  background: #2e3c45;
+}
+.to__top a::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: calc(50% + 3px);
+  transform: rotate(-30deg);
+  width: 1px;
+  height: 10px;
+  transition: 0.3s;
+  background: #2e3c45;
+}
+.to__top a:hover {
+  border: 1px solid #eb7084;
+  color: #eb7084;
+}
+.to__top a:hover::before {
+  background: #eb7084;
+}
+.to__top a:hover::after {
+  background: #eb7084;
 }/*# sourceMappingURL=style.css.map */
